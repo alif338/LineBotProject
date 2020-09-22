@@ -1,0 +1,123 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Oded_Muhammad_Danial%2C_Mayor_of_Bandung.jpg",
+        "margin": "xs",
+        "position": "relative"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Walikota",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "hello, world",
+            "contents": [
+              {
+                "type": "span",
+                "text": "Nama : H. Oded Mohamad Danial, S.A.P."
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Masa Jabatan : 2018-2023"
+          },
+          {
+            "type": "text",
+            "text": "Tempat Lahir : Tasikmalaya"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "secondary",
+            "action": {
+              "type": "postback",
+              "label": "Lebih Lengkap",
+              "data": "#walkot_detail",
+              "displayText": "#walkot_detail"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Vice_Mayor_of_Bandung_Yana_Mulyana.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Wakil Walikota",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "text",
+            "text": "Nama : H. Yana Mulyana, S.E. ",
+            "wrap": true,
+            "size": "md",
+            "margin": "md",
+            "flex": 0
+          },
+          {
+            "type": "text",
+            "text": "Masa Jabatan : 2018-2023"
+          },
+          {
+            "type": "text",
+            "text": "Tempat Lahir : Bandung"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "flex": 2,
+            "style": "secondary",
+            "action": {
+              "type": "postback",
+              "label": "Lebih Lengkap",
+              "data": "#wawalkot_detail",
+              "displayText": "#wawalkot_detail"
+            }
+          }
+        ]
+      }
+    }
+    ]
+}

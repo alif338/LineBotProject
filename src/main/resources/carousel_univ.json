@@ -1,0 +1,72 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Universitas di Bandung",
+        "weight": "bold",
+        "size": "lg",
+        "decoration": "underline",
+        "position": "relative",
+        "align": "center"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Institut Teknologi Bandung",
+          "data": "#itb_detail",
+          "displayText": "#itb_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Universitas Pendidikan Indonesia",
+          "data": "#upi_detail",
+          "displayText": "#upi_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Universitas Pasundan",
+          "data": "#unpas_detal",
+          "displayText": "#unpas_detal"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Unisba",
+          "data": "#unisba_detail",
+          "displayText": "#unisba_detail"
+        }
+      },
+      {
+        "type": "separator"
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Kuliner Bandung",
+        "weight": "bold",
+        "size": "lg",
+        "decoration": "underline",
+        "position": "relative",
+        "align": "center"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Odading",
+          "data": "#odading_detail",
+          "displayText": "#odading_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Nasi Kalong",
+          "data": "#nas_kol_detail",
+          "displayText": "#nas_kol_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Martabak Manis",
+          "data": "#mart_manis_detail",
+          "displayText": "#mart_manis_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Mochi Ice Cream",
+          "data": "#mochi_detail",
+          "displayText": "#mochi_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Rumah Sosis",
+          "data": "#rmh_sosis_detail",
+          "displayText": "#rmh_sosis_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Batagor",
+          "data": "#batagor_detail",
+          "displayText": "#batagor_detail"
+        }
+      }
+    ]
+  }
+}

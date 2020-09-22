@@ -1,0 +1,116 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Walikota",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Oded_Muhammad_Danial%2C_Mayor_of_Bandung.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Nama :",
+            "color": "#666666",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "H. Oded Muhammad Danial, S.A.P",
+            "wrap": true,
+            "flex": 5
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Periode :",
+            "flex": 2,
+            "color": "#666666"
+          },
+          {
+            "type": "text",
+            "text": "2018 - 2023",
+            "flex": 5,
+            "color": "#aaaaaa"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "TTL :",
+            "flex": 1,
+            "color": "#666666"
+          },
+          {
+            "type": "text",
+            "text": "Tasikmalaya, 15 November 1962",
+            "wrap": true,
+            "flex": 4,
+            "color": "#aaaaaa"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "H. Oded Muhammad Danial, S.A.P. (lahir di Tasikmalaya, Jawa Barat, 15 November 1962; umur 56 tahun) adalah seorang politikus yang sekarang menjabat sebagai Wali Kota Bandung periode 2018 - 2023 didampingi Yana Mulyana sebagai wakilnya, sebelumnya dia adalah wakil wali kota Bandung periode 2013 - 2018 mendampingi Ridwan Kamil. Sebelum menjadi wakil wali kota dia merupakan anggota DPRD Kota Bandung untuk periode 2004 - 2009 sekaligus sebagai Ketua DPD PKS Kota Bandung.",
+        "wrap": true,
+        "align": "start",
+        "gravity": "top",
+        "margin": "sm",
+        "weight": "bold"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Sumber",
+          "uri": "https://id.wikipedia.org/wiki/Oded_Muhammad_Danial"
+        }
+      },
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "uri",
+          "label": "Instagram",
+          "uri": "https://www.instagram.com/mangoded_md/"
+        }
+      }
+    ]
+  }
+}

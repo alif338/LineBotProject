@@ -1,0 +1,199 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://idetrips.com/wp-content/uploads/2018/10/Tempat-Wisata-di-Bandung-Gambar-Gedung-Sate.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Pemerintahan",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "hello, world",
+            "contents": [
+              {
+                "type": "span",
+                "text": "Daftar Pemerintah Kota Bandung"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "postback",
+              "label": "Lihat Summary",
+              "data": "#summary_govern",
+              "displayText": "#summary_govern"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://asset.kompas.com/crops/AoBKmkpfpOBpO5orRY2uDT0NfJM=/0x0:845x563/750x500/data/photo/2020/09/16/5f617e30c4d9a.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Kuliner",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "text",
+            "text": "Kuliner Terpopuler di Kota Bandung",
+            "wrap": true,
+            "size": "md",
+            "margin": "md",
+            "flex": 0
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "flex": 2,
+            "style": "primary",
+            "action": {
+              "type": "postback",
+              "label": "Lihat Summary",
+              "data": "#summary_food",
+              "displayText": "#summary_food"
+            },
+            "color": "#f5b145"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Musium_KAA.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Pariwisata",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "Tempat yang Cocok Buat Travellers"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "Lihat Summary",
+              "data": "#summary_travel",
+              "displayText": "#summary_travel"
+            },
+            "style": "primary",
+            "color": "#b5b5b5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://akcdn.detik.net.id/community/media/visual/2020/07/10/kampus-itb-1_169.jpeg?w=700&q=90",
+        "aspectMode": "cover",
+        "size": "full",
+        "aspectRatio": "20:13"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Universitas",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "Kampus Yang Banyak DIkenal",
+            "size": "md",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "Di Kota Bandung",
+            "size": "md"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "Lihat Summary",
+              "data": "#summary_univ",
+              "displayText": "#summary_univ"
+            },
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}

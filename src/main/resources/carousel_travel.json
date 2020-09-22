@@ -1,0 +1,93 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Tempat Wisata Bandung",
+        "weight": "bold",
+        "size": "lg",
+        "decoration": "underline",
+        "position": "relative",
+        "align": "center"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Jalan Asia Afrika",
+          "data": "#kaa_detail",
+          "displayText": "#kaa_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Gunung Tangkuban Perahu",
+          "data": "#gtp_detail",
+          "displayText": "#gtp_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Taman Hutan Raya IR Juanda",
+          "data": "#hutan_raya_detail",
+          "displayText": "#hutan_raya_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Ranca Upas",
+          "data": "#ranca_upas_detail",
+          "displayText": "#ranca_upas_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Taman Balai Kota",
+          "data": "#balkot_detail",
+          "displayText": "#balkot_detail"
+        }
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "postback",
+          "label": "Observatorium Bosscha",
+          "data": "#bosscha_detail",
+          "displayText": "#bosscha_detail"
+        }
+      }
+    ]
+  }
+}

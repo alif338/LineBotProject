@@ -1,0 +1,116 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Wakil Walikota",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Vice_Mayor_of_Bandung_Yana_Mulyana.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Nama :",
+            "color": "#666666",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "H. Yana Mulyana, S.E.",
+            "wrap": true,
+            "flex": 5
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Periode :",
+            "flex": 2,
+            "color": "#666666"
+          },
+          {
+            "type": "text",
+            "text": "2018 - 2023",
+            "flex": 5,
+            "color": "#aaaaaa"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "TTL :",
+            "flex": 1,
+            "color": "#666666"
+          },
+          {
+            "type": "text",
+            "text": "Bandung, 17 Februari 1965",
+            "wrap": true,
+            "flex": 4,
+            "color": "#aaaaaa"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "H. Yana Mulyana, S.E. adalah seorang Pengusaha, Bisnis, Politikus yang sekarang menjabat sebagai Wakil Wali Kota Bandung periode 2018 - 2023 mendampingi Wali Kota Bandung, Oded Muhammad Danial. Sebelum menjadi Wakil Wali Kota Bandung, Yana dikenal sukses sebagai pengusaha. Ia juga memiliki bisnis properti dan beberapa lini usaha lainnya. Ia, juga pendiri radio Rase FM. Kiprah Yana di Rase FM dimulai pada 1987 ketika ia melanjutkan proses perizinan pendirian Radio Rase yang sebelumnya sempat tertunda.",
+        "wrap": true,
+        "align": "start",
+        "gravity": "top",
+        "margin": "sm",
+        "weight": "bold"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Sumber",
+          "uri": "https://id.wikipedia.org/wiki/Yana_Mulyana"
+        }
+      },
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "uri",
+          "label": "Instagram",
+          "uri": "https://www.instagram.com/kangyanamulyana/"
+        }
+      }
+    ]
+  }
+}
