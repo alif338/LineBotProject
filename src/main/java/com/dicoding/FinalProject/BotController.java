@@ -6,6 +6,7 @@ import com.linecorp.bot.client.LineSignatureValidator;
 import com.linecorp.bot.client.MessageContentResponse;
 import com.linecorp.bot.model.Multicast;
 import com.linecorp.bot.model.ReplyMessage;
+import com.linecorp.bot.model.action.MessageAction;
 import com.linecorp.bot.model.event.MessageEvent;
 import com.linecorp.bot.model.event.message.*;
 import com.linecorp.bot.model.event.source.GroupSource;
@@ -101,7 +102,12 @@ class Controller {
         // Conditional apakah event mendapatkan pesan "flex message" atau tidak
         if (textMessageContent.getText().toLowerCase().contains("detail")) {
             replyFlexMessage(event.getReplyToken(), textMessageContent.getText().toLowerCase());
+        } else if (textMessageContent.getText().toLowerCase().contains("#init")) {
+            TemplateMessage carouselEvent = replyCarouselMessage();
+            ReplyMessage replyMessage = new ReplyMessage(event.getReplyToken(), carouselEvent);
+            reply(replyMessage);
         }
+
         else {
             List<Message> msgArray = new ArrayList<>();
             msgArray.add(new TextMessage(textMessageContent.getText()));
@@ -274,21 +280,39 @@ class Controller {
             ObjectMapper objectMapper = ModelObjectMapper.createNewObjectMapper();
             FlexContainer flexContainer = objectMapper.readValue(flexTemplate, FlexContainer.class);
 
-            ReplyMessage replyMessage = new ReplyMessage(replyToken, new FlexMessage("Dicoding Academy", flexContainer));
+            ReplyMessage replyMessage = new ReplyMessage(replyToken, new FlexMessage("Flex Message", flexContainer));
             reply(replyMessage);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    /*private TemplateMessage replyCarouselMessage(String replyToken) {
+    private TemplateMessage replyCarouselMessage() {
         CarouselColumn column;
-        String image, own,name,link, name_id;
-        List<CarouselColumn> carColumn =new ArrayList<>();
+        List<CarouselColumn> carouselColumn = new ArrayList<>();
 
-        CarouselTemplate carTemp =new CarouselTemplate(carColumn);
+        String[] carouselImg = {"https://idetrips.com/wp-content/uploads/2018/10/Tempat-Wisata-di-Bandung-Gambar-Gedung-Sate.jpg",
+        "https://asset.kompas.com/crops/AoBKmkpfpOBpO5orRY2uDT0NfJM=/0x0:845x563/750x500/data/photo/2020/09/16/5f617e30c4d9a.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/8/84/Musium_KAA.jpg",
+                "https://akcdn.detik.net.id/community/media/visual/2020/07/10/kampus-itb-1_169.jpeg?w=700&q=90"};
+        String[] carouselTitle = {"Pemerintahan", "Kuliner", "Pariwisata", "Universitas"};
+        String[] carouselText = {"Daftar Pemerintah Kota Bandung", "Kuliner Populer di Kota Bandung",
+                "Tempat yang Cocok Buat Travellers", "Kampus yang Banyak Dikenal di Kota Bandung"};
+        String[] carouselButton = {"#summary_govern", "#summary_food", "#summary_travel","#summary_univ"};
 
-        return 0;*/
+        for (int i = 0; i < carouselImg.length; i++) {
+            column = new CarouselColumn(carouselImg[i],carouselTitle[i],carouselText[i], Arrays.asList(
+                new MessageAction("Lihat Summary", carouselButton[i])
+            )
+            );
+            carouselColumn.add(column);
+        }
+
+        CarouselTemplate carouselTemplate = new CarouselTemplate(carouselColumn);
+
+        return new TemplateMessage("Search result", carouselTemplate);
+    }
+
 
 
 }
