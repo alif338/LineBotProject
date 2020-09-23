@@ -54,7 +54,7 @@
             "action": {
               "type": "message",
               "label": "Lebih Lengkap",
-              "text" : "#walkot_detail"
+              "text": "#walkot_detail"
             }
           }
         ]
@@ -111,11 +111,11 @@
             "action": {
               "type": "message",
               "label": "Lebih Lengkap",
-              "text" : "#wawalkot_detail"
+              "text": "#wawalkot_detail"
             }
           }
         ]
       }
     }
-    ]
+  ]
 }

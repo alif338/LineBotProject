@@ -42,7 +42,7 @@
             "type": "button",
             "style": "primary",
             "action": {
-              "type": "postback",
+              "type": "message",
               "label": "Lihat Summary",
               "data": "#summary_govern",
               "displayText": "#summary_govern"
@@ -92,7 +92,7 @@
             "flex": 2,
             "style": "primary",
             "action": {
-              "type": "postback",
+              "type": "message",
               "label": "Lihat Summary",
               "data": "#summary_food",
               "displayText": "#summary_food"
@@ -135,7 +135,7 @@
           {
             "type": "button",
             "action": {
-              "type": "postback",
+              "type": "message",
               "label": "Lihat Summary",
               "data": "#summary_travel",
               "displayText": "#summary_travel"
@@ -185,7 +185,7 @@
           {
             "type": "button",
             "action": {
-              "type": "postback",
+              "type": "message",
               "label": "Lihat Summary",
               "data": "#summary_univ",
               "displayText": "#summary_univ"

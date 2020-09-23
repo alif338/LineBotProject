@@ -24,8 +24,8 @@
         "action": {
           "type": "postback",
           "label": "Odading",
-          "data": "#odading_detail",
-          "displayText": "#odading_detail"
+          "text": "#odading_detail"
+
         }
       },
       {
@@ -34,10 +34,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Nasi Kalong",
-          "data": "#nas_kol_detail",
-          "displayText": "#nas_kol_detail"
+          "text": "#nas_kol_detail"
         }
       },
       {
@@ -46,10 +45,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Martabak Manis",
-          "data": "#mart_manis_detail",
-          "displayText": "#mart_manis_detail"
+          "text": "#mart_manis_detail"
         }
       },
       {
@@ -58,10 +56,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Mochi Ice Cream",
-          "data": "#mochi_detail",
-          "displayText": "#mochi_detail"
+          "text": "#mochi_detail"
         }
       },
       {
@@ -70,10 +67,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Rumah Sosis",
-          "data": "#rmh_sosis_detail",
-          "displayText": "#rmh_sosis_detail"
+          "text": "#rmh_sosis_detail"
         }
       },
       {
@@ -82,10 +78,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Batagor",
-          "data": "#batagor_detail",
-          "displayText": "#batagor_detail"
+          "text": "#batagor_detail"
         }
       }
     ]

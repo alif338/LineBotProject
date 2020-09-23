@@ -306,7 +306,11 @@ class Controller {
         try {
             ClassLoader classLoader = getClass().getClassLoader();
             String json = "";
-            if (getKey.contains("odading_detail")){
+            if (getKey.contains("walkot_detail")) {
+                json = "walkot_detail.json";
+            } else if (getKey.contains("wawalkot_detail")) {
+                json = "wawalkot_detail.json";
+            } else if (getKey.contains("odading_detail")){
                 json = "odading_details.json";
             } else if (getKey.contains("nas_kol_detail")){
                 json = "nasi_kalong_details.json";

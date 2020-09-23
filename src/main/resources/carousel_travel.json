@@ -22,10 +22,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Jalan Asia Afrika",
-          "data": "#kaa_detail",
-          "displayText": "#kaa_detail"
+          "text": "#kaa_detail"
         }
       },
       {
@@ -34,10 +33,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Gunung Tangkuban Perahu",
-          "data": "#gtp_detail",
-          "displayText": "#gtp_detail"
+          "text": "#gtp_detail"
         }
       },
       {
@@ -46,10 +44,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Taman Hutan Raya IR Juanda",
-          "data": "#tahura_detail",
-          "displayText": "#tahura_detail"
+          "text": "#tahura_detail"
         }
       },
       {
@@ -58,10 +55,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Ranca Upas",
-          "data": "#ranca_upas_detail",
-          "displayText": "#ranca_upas_detail"
+          "text": "#ranca_upas_detail"
         }
       },
       {
@@ -70,10 +66,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Taman Balai Kota",
-          "data": "#balkot_detail",
-          "displayText": "#balkot_detail"
+          "text": "#balkot_detail"
         }
       },
       {
@@ -82,10 +77,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Observatorium Bosscha",
-          "data": "#bosscha_detail",
-          "displayText": "#bosscha_detail"
+          "text": "#bosscha_detail"
         }
       }
     ]

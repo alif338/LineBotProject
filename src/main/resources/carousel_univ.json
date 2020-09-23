@@ -22,10 +22,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Institut Teknologi Bandung",
-          "data": "#itb_detail",
-          "displayText": "#itb_detail"
+          "text": "#itb_detail"
         }
       },
       {
@@ -34,10 +33,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Universitas Pendidikan Indonesia",
-          "data": "#upi_detail",
-          "displayText": "#upi_detail"
+          "text": "#upi_detail"
         }
       },
       {
@@ -46,10 +44,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Universitas Pasundan",
-          "data": "#unpas_detail",
-          "displayText": "#unpas_detail"
+          "text": "#unpas_detail"
         }
       },
       {
@@ -58,10 +55,9 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Unisba",
-          "data": "#unisba_detail",
-          "displayText": "#unisba_detail"
+          "text": "#unisba_detail"
         }
       },
       {
