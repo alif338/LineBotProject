@@ -44,8 +44,7 @@
             "action": {
               "type": "message",
               "label": "Lihat Summary",
-              "data": "#summary_govern",
-              "displayText": "#summary_govern"
+              "text": "#summary_govern"
             }
           }
         ]
@@ -94,8 +93,7 @@
             "action": {
               "type": "message",
               "label": "Lihat Summary",
-              "data": "#summary_food",
-              "displayText": "#summary_food"
+              "text": "#summary_food"
             },
             "color": "#f5b145"
           }
@@ -137,8 +135,7 @@
             "action": {
               "type": "message",
               "label": "Lihat Summary",
-              "data": "#summary_travel",
-              "displayText": "#summary_travel"
+              "text": "#summary_travel"
             },
             "style": "primary",
             "color": "#b5b5b5"
@@ -187,8 +184,7 @@
             "action": {
               "type": "message",
               "label": "Lihat Summary",
-              "data": "#summary_univ",
-              "displayText": "#summary_univ"
+              "text": "#summary_univ"
             },
             "style": "primary"
           }
