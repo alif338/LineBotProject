@@ -110,10 +110,9 @@
             "flex": 2,
             "style": "secondary",
             "action": {
-              "type": "postback",
+              "type": "message",
               "label": "Lebih Lengkap",
-              "data": "#wawalkot_detail",
-              "displayText": "#wawalkot_detail"
+              "text" : "#wawalkot_detail"
             }
           }
         ]

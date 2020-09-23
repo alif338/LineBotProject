@@ -48,8 +48,8 @@
         "action": {
           "type": "postback",
           "label": "Universitas Pasundan",
-          "data": "#unpas_detal",
-          "displayText": "#unpas_detal"
+          "data": "#unpas_detail",
+          "displayText": "#unpas_detail"
         }
       },
       {

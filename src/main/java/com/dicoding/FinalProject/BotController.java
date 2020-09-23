@@ -100,8 +100,7 @@ class Controller {
         MessageEvent messageEvent = event;
         TextMessageContent textMessageContent = (TextMessageContent) messageEvent.getMessage();
         // Conditional apakah event mendapatkan pesan "flex message" atau tidak
-        if (textMessageContent.getText().
-        toLowerCase().contains("summary")) {
+        if (textMessageContent.getText().toLowerCase().contains("summary")) {
             replyFlexMessage1(event.getReplyToken(), textMessageContent.getText().toLowerCase());
         } else if (textMessageContent.getText().toLowerCase().contains("#init")) {
             TemplateMessage carouselEvent = replyCarouselMessage();
