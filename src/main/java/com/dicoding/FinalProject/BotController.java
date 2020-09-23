@@ -80,19 +80,8 @@ class Controller {
     }
 
     private void handleOneOnOneChats(MessageEvent event) {
-        if  (event.getMessage() instanceof AudioMessageContent
-                || event.getMessage() instanceof ImageMessageContent
-                || event.getMessage() instanceof VideoMessageContent
-                || event.getMessage() instanceof FileMessageContent
-        ) {
-            handleContentMessage(event);
-        } else if(event.getMessage() instanceof TextMessageContent) {
+        if(event.getMessage() instanceof TextMessageContent) {
             handleTextMessage(event);
-        } else if (event.getMessage() instanceof StickerMessageContent) {
-            replySticker(event.getReplyToken(), "1","125");
-        }
-        else {
-            replyText(event.getReplyToken(), "Unknown Message");
         }
     }
 
@@ -110,64 +99,17 @@ class Controller {
             replyFlexMessage2(event.getReplyToken(),textMessageContent.getText().toLowerCase());
         }
 
-        else {
-            List<Message> msgArray = new ArrayList<>();
-            msgArray.add(new TextMessage(textMessageContent.getText()));
-            msgArray.add(new StickerMessage("1", "106"));
-            ReplyMessage replyMessage = new ReplyMessage(messageEvent.getReplyToken(), msgArray);
-            reply(replyMessage);
-        }
     }
 
-
-
-    private void handleContentMessage(MessageEvent event) {
-        String baseURL     = "https://botjavatest.herokuapp.com";
-        String contentURL  = baseURL+"/content/"+ event.getMessage().getId();
-        String contentType = event.getMessage().getClass().getSimpleName();
-        String textMsg     = contentType.substring(0, contentType.length() -14)
-                + " yang kamu kirim bisa diakses dari link:\n "
-                + contentURL;
-
-        replyText(event.getReplyToken(), textMsg);
-    }
 
     private void handleGroupRoomChats(MessageEvent event) {
         if(!event.getSource().getUserId().isEmpty()) {
-            String userId = event.getSource().getUserId();
-            UserProfileResponse profile = getProfile(userId);
-            replyText(event.getReplyToken(), "Hello, " + profile.getDisplayName());
+            handleTextMessage(event);
         } else {
-            replyText(event.getReplyToken(), "Hello, what is your name?");
+            replyText(event.getReplyToken(), "Hello, Silahkan menambahkan BOTBabandungan ini sebagai teman :)");
         }
     }
 
-
-    // Eksekusi untuk melakukan push message, berdasarkan User ID yang dimiliki
-    @RequestMapping(value="/pushmessage/{id}/{message}", method=RequestMethod.GET)
-    public ResponseEntity<String> pushmessage(
-            @PathVariable("id") String userId,
-            @PathVariable("message") String textMsg
-    ){
-        TextMessage textMessage = new TextMessage(textMsg);
-        PushMessage pushMessage = new PushMessage(userId, textMessage);
-        push(pushMessage);
-
-        return new ResponseEntity<String>("Push message:"+textMsg+"\nsent to: "+userId, HttpStatus.OK);
-    }
-
-    // Eksekusi untuk melakukan multicast message, dari beberapa user
-    @RequestMapping(value="/multicast", method=RequestMethod.GET)
-    public ResponseEntity<String> multicast(){
-        String[] userIdList = {
-                "U36635aea0b7478415cb72eb5a55cbd45"};
-        Set<String> listUsers = new HashSet<String>(Arrays.asList(userIdList));
-        if(listUsers.size() > 0){
-            String textMsg = "Ini pesan multicast";
-            sendMulticast(listUsers, textMsg);
-        }
-        return new ResponseEntity<String>(HttpStatus.OK);
-    }
 
     // Eksekusi untuk melakukan profile getter, dari suatu user
     @RequestMapping(value = "/profile/{id}", method = RequestMethod.GET)
@@ -187,26 +129,6 @@ class Controller {
         return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
     }
 
-    // Eksekusi untuk menerima/mengambil berkas (dengan jenis ekstensi file tertentu) untuk disimpan di heroku
-    @RequestMapping(value = "/content/{id}", method = RequestMethod.GET)
-    public ResponseEntity content(
-            @PathVariable("id") String messageId
-    ){
-        MessageContentResponse messageContent = getContent(messageId);
-
-        if(messageContent != null) {
-            HttpHeaders headers = new HttpHeaders();
-            String[] mimeType = messageContent.getMimeType().split("/");
-            headers.setContentType(new MediaType(mimeType[0], mimeType[1]));
-
-            InputStream inputStream = messageContent.getStream();
-            InputStreamResource inputStreamResource = new InputStreamResource(inputStream);
-
-            return new ResponseEntity<>(inputStreamResource, headers, HttpStatus.OK);
-        }
-
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-    }
 
     // Method untuk melakukan push message
     private void push(PushMessage pushMessage){
@@ -227,17 +149,6 @@ class Controller {
         return null;
     }
 
-    // Method untuk melakukan multicast message
-    private void sendMulticast(Set<String> sourceUsers, String txtMessage){
-        TextMessage message = new TextMessage(txtMessage);
-        Multicast multicast = new Multicast(sourceUsers, message);
-
-        try {
-            lineMessagingClient.multicast(multicast).get();
-        } catch (InterruptedException | ExecutionException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     // Method untuk mendapatkan identity2 pada suatu Line profiles
     private UserProfileResponse getProfile(String userId){
@@ -248,14 +159,6 @@ class Controller {
         }
     }
 
-    // Method untuk menerima/mengambil file (Dengan ekstensi tertentu) dari user, dan disimpan di heroku
-    private MessageContentResponse getContent(String messageId) {
-        try {
-            return lineMessagingClient.getMessageContent(messageId).get();
-        } catch (InterruptedException | ExecutionException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     private void replyText(String replyToken, String messageToUser){
         TextMessage textMessage = new TextMessage(messageToUser);
@@ -263,12 +166,6 @@ class Controller {
         reply(replyMessage);
     }
 
-
-    private void replySticker(String replyToken, String packageId, String stickerId){
-        StickerMessage stickerMessage = new StickerMessage(packageId, stickerId);
-        ReplyMessage replyMessage = new ReplyMessage(replyToken, stickerMessage);
-        reply(replyMessage);
-    }
 
     // Method untuk menghasilkan Flex Message
     private FlexMessage replyFlexMessage1(String replyToken, String getKey) {
