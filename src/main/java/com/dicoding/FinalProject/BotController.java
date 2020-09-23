@@ -178,9 +178,9 @@ class Controller {
         try {
             ClassLoader classLoader = getClass().getClassLoader();
             String json = "";
-            if (getKey.contains("#walkot_detail")){
+            if (getKey.contains("walkot_detail")){
                 json = "walkot_detail.json";
-            } else if (getKey.contains("#wawalkot_detail")){
+            } else if (getKey.contains("wawalkot_detail")){
                 json = "wawalkot_detail.json";
             } else if (getKey.contains("summary_govern")){
                 json = "carousel_govern.json";
@@ -307,7 +307,7 @@ class Controller {
         } else if (source instanceof RoomSource) {
             message = String.format(message, "Room");
         } else if (source instanceof UserSource) {
-            message = String.format(message, source.getSenderId());
+            message = String.format(message, "User");
         } else {
             message = "Unknown Message Source!";
         }
