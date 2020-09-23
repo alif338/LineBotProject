@@ -23,10 +23,9 @@
         "style": "link",
         "height": "sm",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Start",
-          "data": "#init",
-          "displayText": "#init"
+          "text" : "#init"
         }
       },
       {
