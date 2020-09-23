@@ -270,23 +270,23 @@ class Controller {
         try {
             ClassLoader classLoader = getClass().getClassLoader();
             String json = "";
-            if (getKey.equals("#walkot_detail")){
+            if (getKey.contains("#walkot_detail")){
                 json = "walkot_detail.json";
-            } else if (getKey.equals("#wawalkot_detail")){
+            } else if (getKey.contains("#wawalkot_detail")){
                 json = "wawalkot_detail.json";
-            } else if (getKey.equals("summary_govern")){
+            } else if (getKey.contains("summary_govern")){
                 json = "carousel_govern.json";
-            } else if (getKey.equals("summary_food")){
+            } else if (getKey.contains("summary_food")){
                 json = "carousel_food.json";
-            } else if (getKey.equals("summary_travel")){
+            } else if (getKey.contains("summary_travel")){
                 json = "carousel_travel.json";
-            } else if (getKey.equals("summary_univ")){
+            } else if (getKey.contains("summary_univ")){
                 json = "carousel_univ.json";
-            } else if (getKey.equals("odading_detail")){
+            } else if (getKey.contains("odading_detail")){
                 json = "odading_details.json";
-            } else if (getKey.equals("nas_kol_detail")){
+            } else if (getKey.contains("nas_kol_detail")){
                 json = "nasi_kalong_details.json";
-            } else if (getKey.equals("mart_manis_detail")){
+            } else if (getKey.contains("mart_manis_detail")){
                 json = "martabak_manis_detail.json";
             } else if (getKey.contains("mochi_detail")) {
                 json = "mochi_details.json";
