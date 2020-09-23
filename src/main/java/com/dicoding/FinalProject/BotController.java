@@ -7,13 +7,18 @@ import com.linecorp.bot.client.MessageContentResponse;
 import com.linecorp.bot.model.Multicast;
 import com.linecorp.bot.model.ReplyMessage;
 import com.linecorp.bot.model.action.MessageAction;
+import com.linecorp.bot.model.event.FollowEvent;
+import com.linecorp.bot.model.event.JoinEvent;
 import com.linecorp.bot.model.event.MessageEvent;
 import com.linecorp.bot.model.event.message.*;
 import com.linecorp.bot.model.event.source.GroupSource;
 import com.linecorp.bot.model.event.source.RoomSource;
+import com.linecorp.bot.model.event.source.Source;
+import com.linecorp.bot.model.event.source.UserSource;
 import com.linecorp.bot.model.message.*;
 import com.linecorp.bot.model.PushMessage;
 import com.linecorp.bot.model.message.flex.container.FlexContainer;
+import com.linecorp.bot.model.message.template.ButtonsTemplate;
 import com.linecorp.bot.model.message.template.CarouselColumn;
 import com.linecorp.bot.model.message.template.CarouselTemplate;
 import com.linecorp.bot.model.objectmapper.ModelObjectMapper;
@@ -69,6 +74,8 @@ class Controller {
                         // Method apabila Bot berada di luar groupchat atau personal chat ke Bot
                         handleOneOnOneChats((MessageEvent) event);
                     }
+                } else if (event instanceof FollowEvent || event instanceof JoinEvent) {
+                    greetingMessage(event.getSource());
                 }
             });
             return new ResponseEntity<>(HttpStatus.OK);
@@ -100,7 +107,6 @@ class Controller {
         }
 
     }
-
 
     private void handleGroupRoomChats(MessageEvent event) {
         if(!event.getSource().getUserId().isEmpty()) {
@@ -278,6 +284,35 @@ class Controller {
         CarouselTemplate carouselTemplate = new CarouselTemplate(carouselColumn);
 
         return new TemplateMessage("Search result", carouselTemplate);
+    }
+
+    public TemplateMessage createButton(String message, String actionTitle, String actionText) {
+        ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
+                null,
+                null,
+                message,
+                Collections.singletonList(new MessageAction(actionTitle, actionText))
+        );
+
+        return new TemplateMessage(actionTitle, buttonsTemplate);
+    }
+
+    public TemplateMessage greetingMessage(Source source) {
+        String message  = "Hi %s! aku mungkin akan memandu kalian untuk mengetahui sebagian kecil tentang Babandungan :)";
+        String label   = "Start";
+        String action = "#init";
+
+        if (source instanceof GroupSource) {
+            message = String.format(message, "Group");
+        } else if (source instanceof RoomSource) {
+            message = String.format(message, "Room");
+        } else if (source instanceof UserSource) {
+            message = String.format(message, source.getSenderId());
+        } else {
+            message = "Unknown Message Source!";
+        }
+
+        return createButton(message, label, action);
     }
 
 
