@@ -10,6 +10,7 @@ import com.linecorp.bot.model.action.MessageAction;
 import com.linecorp.bot.model.event.FollowEvent;
 import com.linecorp.bot.model.event.JoinEvent;
 import com.linecorp.bot.model.event.MessageEvent;
+import com.linecorp.bot.model.event.ReplyEvent;
 import com.linecorp.bot.model.event.message.*;
 import com.linecorp.bot.model.event.source.GroupSource;
 import com.linecorp.bot.model.event.source.RoomSource;
@@ -75,7 +76,7 @@ class Controller {
                         handleOneOnOneChats((MessageEvent) event);
                     }
                 } else if (event instanceof FollowEvent || event instanceof JoinEvent) {
-                    greetingMessage(event.getSource());
+                    greetingMessage(((ReplyEvent) event).getReplyToken(),event.getSource());
                 }
             });
             return new ResponseEntity<>(HttpStatus.OK);
@@ -315,6 +316,11 @@ class Controller {
         return createButton(message, label, action);
     }
 
+    private void greetingMessage(String replyToken, Source source){
+        TemplateMessage templateMessage = greetingMessage(source);
+        ReplyMessage replyMessage = new ReplyMessage(replyToken,templateMessage);
+        reply(replyMessage);
+    }
 
 
 }
