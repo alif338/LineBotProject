@@ -219,12 +219,13 @@ class Controller {
     }
 
     // Method untuk melakukan reply message
-    private void reply(ReplyMessage replyMessage) {
+    private FlexMessage reply(ReplyMessage replyMessage) {
         try {
             lineMessagingClient.replyMessage(replyMessage).get();
         } catch (InterruptedException | ExecutionException e) {
             throw new RuntimeException(e);
         }
+        return null;
     }
 
     // Method untuk melakukan multicast message
@@ -271,7 +272,7 @@ class Controller {
     }
 
     // Method untuk menghasilkan Flex Message
-    private void replyFlexMessage1(String replyToken, String getKey) {
+    private FlexMessage replyFlexMessage1(String replyToken, String getKey) {
         try {
             ClassLoader classLoader = getClass().getClassLoader();
             String json = "";
@@ -296,13 +297,13 @@ class Controller {
             FlexContainer flexContainer = objectMapper.readValue(flexTemplate, FlexContainer.class);
 
             ReplyMessage replyMessage = new ReplyMessage(replyToken, new FlexMessage("Flex Message", flexContainer));
-            reply(replyMessage);
+            return reply(replyMessage);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    private void replyFlexMessage2(String replyToken, String getKey) {
+    private FlexMessage replyFlexMessage2(String replyToken, String getKey) {
         try {
             ClassLoader classLoader = getClass().getClassLoader();
             String json = "";
@@ -347,7 +348,7 @@ class Controller {
             FlexContainer flexContainer = objectMapper.readValue(flexTemplate, FlexContainer.class);
 
             ReplyMessage replyMessage = new ReplyMessage(replyToken, new FlexMessage("Flex Message", flexContainer));
-            reply(replyMessage);
+            return reply(replyMessage);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
