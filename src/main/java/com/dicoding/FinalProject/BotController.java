@@ -100,13 +100,15 @@ class Controller {
         MessageEvent messageEvent = event;
         TextMessageContent textMessageContent = (TextMessageContent) messageEvent.getMessage();
         // Conditional apakah event mendapatkan pesan "flex message" atau tidak
-        if (textMessageContent.getText().toLowerCase().contains("detail")||textMessageContent.getText().
+        if (textMessageContent.getText().
         toLowerCase().contains("summary")) {
-            replyFlexMessage(event.getReplyToken(), textMessageContent.getText().toLowerCase());
+            replyFlexMessage1(event.getReplyToken(), textMessageContent.getText().toLowerCase());
         } else if (textMessageContent.getText().toLowerCase().contains("#init")) {
             TemplateMessage carouselEvent = replyCarouselMessage();
             ReplyMessage replyMessage = new ReplyMessage(event.getReplyToken(), carouselEvent);
             reply(replyMessage);
+        } else if (textMessageContent.getText().toLowerCase().contains("detail")) {
+            replyFlexMessage2(event.getReplyToken(),textMessageContent.getText().toLowerCase());
         }
 
         else {
@@ -117,6 +119,8 @@ class Controller {
             reply(replyMessage);
         }
     }
+
+
 
     private void handleContentMessage(MessageEvent event) {
         String baseURL     = "https://botjavatest.herokuapp.com";
@@ -267,7 +271,7 @@ class Controller {
     }
 
     // Method untuk menghasilkan Flex Message
-    private void replyFlexMessage(String replyToken, String getKey) {
+    private void replyFlexMessage1(String replyToken, String getKey) {
         try {
             ClassLoader classLoader = getClass().getClassLoader();
             String json = "";
@@ -283,7 +287,26 @@ class Controller {
                 json = "carousel_travel.json";
             } else if (getKey.contains("summary_univ")){
                 json = "carousel_univ.json";
-            } else if (getKey.contains("odading_detail")){
+            } else {
+                json = "unknown.json";
+            }
+            String flexTemplate = IOUtils.toString(classLoader.getResourceAsStream(json));
+
+            ObjectMapper objectMapper = ModelObjectMapper.createNewObjectMapper();
+            FlexContainer flexContainer = objectMapper.readValue(flexTemplate, FlexContainer.class);
+
+            ReplyMessage replyMessage = new ReplyMessage(replyToken, new FlexMessage("Flex Message", flexContainer));
+            reply(replyMessage);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void replyFlexMessage2(String replyToken, String getKey) {
+        try {
+            ClassLoader classLoader = getClass().getClassLoader();
+            String json = "";
+            if (getKey.contains("odading_detail")){
                 json = "odading_details.json";
             } else if (getKey.contains("nas_kol_detail")){
                 json = "nasi_kalong_details.json";
