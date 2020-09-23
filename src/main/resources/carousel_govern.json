@@ -111,7 +111,7 @@
             "action": {
               "type": "message",
               "label": "Lebih Lengkap",
-              "text": "#wakwalkot_detail"
+              "text": "walkot_wakil_detail"
             }
           }
         ]
