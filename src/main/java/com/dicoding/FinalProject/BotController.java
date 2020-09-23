@@ -179,11 +179,7 @@ class Controller {
         try {
             ClassLoader classLoader = getClass().getClassLoader();
             String json = "";
-            if (getKey.contains("walkot_detail")){
-                json = "walkot_detail.json";
-            } else if (getKey.contains("wawalkot_detail")){
-                json = "wawalkot_detail.json";
-            } else if (getKey.contains("summary_govern")){
+            if (getKey.contains("summary_govern")){
                 json = "carousel_govern.json";
             } else if (getKey.contains("summary_food")){
                 json = "carousel_food.json";
@@ -213,7 +209,7 @@ class Controller {
             if (getKey.contains("walkot_detail")) {
                 json = "walkot_detail.json";
             } else if (getKey.contains("wawalkot_detail")) {
-                json = "wawalkot_detail.json";
+                json = "wakil_walkot_detail.json";
             } else if (getKey.contains("odading_detail")){
                 json = "odading_details.json";
             } else if (getKey.contains("nas_kol_detail")){
