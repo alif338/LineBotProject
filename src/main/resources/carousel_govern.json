@@ -52,10 +52,9 @@
             "type": "button",
             "style": "secondary",
             "action": {
-              "type": "postback",
+              "type": "message",
               "label": "Lebih Lengkap",
-              "data": "#walkot_detail",
-              "displayText": "#walkot_detail"
+              "text" : "#walkot_detail"
             }
           }
         ]
