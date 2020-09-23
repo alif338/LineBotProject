@@ -22,7 +22,7 @@
       {
         "type": "button",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Odading",
           "text": "#odading_detail"
 

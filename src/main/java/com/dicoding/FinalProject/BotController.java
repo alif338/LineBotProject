@@ -238,7 +238,7 @@ class Controller {
             } else if (getKey.contains("unpas_detail")) {
                 json = "unpas_details.json";
             } else if (getKey.contains("unisba_detail")) {
-                json = "unisba_detaails.json";
+                json = "unisba_details.json";
             } else {
                 json = "unknown.json";
             }
