@@ -48,8 +48,8 @@
         "action": {
           "type": "postback",
           "label": "Taman Hutan Raya IR Juanda",
-          "data": "#hutan_raya_detail",
-          "displayText": "#hutan_raya_detail"
+          "data": "#tahura_detail",
+          "displayText": "#tahura_detail"
         }
       },
       {

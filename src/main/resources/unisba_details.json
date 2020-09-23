@@ -1,0 +1,82 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Universitas Islam Bandung",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://mamikos.com/info/wp-content/uploads/2020/02/UNISBA-Mamikos.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Alamat :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Jl. Tamansari No.1, Tamansari, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40116",
+            "flex": 5,
+            "wrap": true
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Tahun Berdiri :",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "1958"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Lahir atas gagasan para tokoh umat Islam dan tuntutan masyarakat Jawa Barat akan adanya perguruan tinggi yang bernafaskan Islam dan melahirkan intelektual muslim. UNISBA memiliki tujuan pendidikan dalam mewujudkan mujahid (pejuang), mujtahid (peneliti) dan mujaddid (pembaharu) dalam suatu masyarakat ilmiah yang Islami.",
+        "wrap": true,
+        "margin": "xl"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Tentang Unisba",
+          "uri": "https://www.itb.ac.id/tentang-itb"
+        },
+        "color": "#4fd2e3"
+      }
+    ]
+  }
+}

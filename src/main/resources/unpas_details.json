@@ -1,0 +1,82 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Universitas Pasundan",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://www.unpas.ac.id/wp-content/uploads/2016/02/Kampus-V-Web-1-400x352.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Alamat :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Jl. Wartawan IV No.22,Kota Bandung,",
+            "flex": 5,
+            "wrap": true
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Tahun Berdiri :",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "1960"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Universitas Pasundan Bandung (UNPAS) berdiri sejak tanggal 14 November 1960. UNPAS telah tumbuh dan berkembang menjadi sebuah Universitas terkemuka dan menjadi kebanggaan masyarakat, terbukti dari jumlah mahasiswa yang saat ini terbesar dilingkungan Kopertis Wilayah IV.",
+        "wrap": true,
+        "margin": "xl"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Tentang Unpas",
+          "uri": "http://www.unpas.ac.id/"
+        },
+        "color": "#4fd2e3"
+      }
+    ]
+  }
+}

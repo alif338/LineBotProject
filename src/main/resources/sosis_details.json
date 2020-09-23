@@ -1,0 +1,53 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Rumah Sosis",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://tempatwisatadibandung.info/wp-content/uploads/2016/03/Menu-Rumah-Sosis-Bandung.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Sosis yang ada di tempat ini adalah sosis buatan sendiri, sehingga dijamin dari segi cita rasa, maka rasa sosis di sini sangat enak sekali, bentuknya unik dan dari sisi higienis maka sosis produksi Rumah sosis terjamin kesehatannya karena salah satunya tidak menggunakan bahan pengawet makanan supaya tahan lama seperti jika anda membeli sosis yang ada di supermarket. Oleh karena itu anda jangan heran apalagi kaget, jika harga sosis di rumah sosis ini relatif lebih mahal daripada yang ada di supermarket karena alasan di atas.",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "Selengkapnya, klik tautan berikut",
+        "color": "#aaaaaa"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Cek Rumah Sosis",
+          "uri": "https://tempatwisatadibandung.info/rumah-sosis-bandung/"
+        }
+      }
+    ]
+  }
+}

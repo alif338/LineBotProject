@@ -1,0 +1,53 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Nasi Kalong",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://cdn2.tstatic.net/jabar/foto/bank/images/sajian-nasi-kalong_20170817_230924.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Nasi Kalong adalah kuliner malam yang tak boleh kamu lewatkan.  Jika nasi pada umumnya berwarna putih, Nasi Kalong memiliki warna hitam keunguan yang berasal dari kluwek.  Kluwek inilah yang memberikan rasa gurih dan sedap. Perpaduan nasi, ayam, tahu, tempe, rolade sapi akan menemani malammu di Bandung.  Kamu juga bisa menambah lauk lain seperti tumis buncis bakar dan ayam goreng madu yang tak kalah nikmatnya. ",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "Selengkapnya, klik tautan berikut",
+        "color": "#aaaaaa"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Kuliner Malam",
+          "uri": "https://jabar.tribunnews.com/2018/11/19/6-tempat-kuliner-malam-bandung-yang-wajib-anda-kunjungi-dari-nasi-kalong-hingga-ronde-alkateri"
+        }
+      }
+    ]
+  }
+}

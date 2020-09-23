@@ -274,6 +274,46 @@ class Controller {
                 json = "walkot_detail.json";
             } else if (getKey.equals("#wawalkot_detail")){
                 json = "wawalkot_detail.json";
+            } else if (getKey.equals("summary_govern")){
+                json = "carousel_govern.json";
+            } else if (getKey.equals("summary_food")){
+                json = "carousel_food.json";
+            } else if (getKey.equals("summary_travel")){
+                json = "carousel_travel.json";
+            } else if (getKey.equals("summary_univ")){
+                json = "carousel_univ.json";
+            } else if (getKey.equals("odading_detail")){
+                json = "odading_details.json";
+            } else if (getKey.equals("nas_kol_detail")){
+                json = "nasi_kalong_details.json";
+            } else if (getKey.equals("mart_manis_detail")){
+                json = "martabak_manis_detail.json";
+            } else if (getKey.contains("mochi_detail")) {
+                json = "mochi_details.json";
+            } else if (getKey.contains("rmh_sosis_detail")) {
+                json = "sosis_details.json";
+            } else if (getKey.contains("batagor_detail")) {
+                json = "batagor_details.json";
+            } else if (getKey.contains("kaa_detail")) {
+                json = "kaa_details.json";
+            } else if (getKey.contains("gtp_detail")) {
+                json = "tang_perahu_details.json";
+            } else if (getKey.contains("tahura_detail")) {
+                json = "tahura_details.json";
+            } else if (getKey.contains("ranca_upas_detail")) {
+                json = "rancaupas_details.json";
+            } else if (getKey.contains("balkot_detail")) {
+                json = "balkot_details.json";
+            } else if (getKey.contains("bosscha_detail")) {
+                json = "bosscha_details.json";
+            } else if (getKey.contains("itb_detail")){
+                json = "itb_details.json";
+            } else if (getKey.contains("upi_detail")) {
+                json = "upi_details.json";
+            } else if (getKey.contains("unpas_detail")) {
+                json = "unpas_details.json";
+            } else if (getKey.contains("unisba_detail")) {
+                json = "unisba_detaails.json";
             }
             String flexTemplate = IOUtils.toString(classLoader.getResourceAsStream(json));
 

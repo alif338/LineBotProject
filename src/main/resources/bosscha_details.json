@@ -1,0 +1,98 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Observatorium Bosscha",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://mmc.tirto.id/image/2019/07/08/observatorium-bosscha_ratio-16x9.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Alamat :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Jl. Peneropongan Bintang No.45, Lembang, Kab Bandung Barat",
+            "flex": 5,
+            "wrap": true
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Jam Operasional :",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "09.00-14.30 WIB"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Kabar Terkini :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Ditutup Sementara",
+            "wrap": true,
+            "flex": 3
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Selengkapnya, silahkan klik link dibawah",
+        "color": "#666666",
+        "wrap": true
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Bosscha ITB",
+          "uri": "https://bosscha.itb.ac.id/"
+        }
+      }
+    ]
+  }
+}

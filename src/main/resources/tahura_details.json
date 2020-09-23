@@ -1,0 +1,98 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Taman Hutan Raya IR. Djuanda",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Taman_Hutan_Raya_IR_Djuanda.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Alamat :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": " Kompleks Tahura, Jl. Ir. H. Juanda No.99, Bandung, Jawa Barat",
+            "flex": 5,
+            "wrap": true
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Jam Operasional :",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "07.00-17.00 WIB"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Kabar Terkini :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Pembatasan Kuota Kunjungan dan Penerapan Protokol Kesehatan",
+            "wrap": true,
+            "flex": 3
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Selengkapnya, silahkan klik link dibawah",
+        "color": "#666666",
+        "wrap": true
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Tahura IR Djuanda",
+          "uri": "https://tahuradjuanda.jabarprov.go.id/"
+        }
+      }
+    ]
+  }
+}

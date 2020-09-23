@@ -1,0 +1,53 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Batagor",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://akcdn.detik.net.id/community/media/visual/2019/12/10/3682670f-c5f5-40e0-b581-8dd86ad4b230_169.jpeg?w=700&q=90",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Batagor adalah jajanan khas Sunda yang cocok untuk mengganjal perut di sore hari. Nama batagor merupakan singkatan 'Bakso Tahu Goreng' yang merujuk pada bahan dan cara membuat batagor. Banyak orang menyukai gurih renyahnya adonan bakso dan tahu goreng.",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "Selengkapnya, klik tautan berikut",
+        "color": "#aaaaaa"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Batagor  Bandung",
+          "uri": "https://food.detik.com/info-kuliner/d-4817395/5-batagor-enak-di-bandung-yang-sudah-teruji-enaknya-puluhan-tahun/1/#news"
+        }
+      }
+    ]
+  }
+}

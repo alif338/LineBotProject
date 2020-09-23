@@ -1,0 +1,93 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Gunung Tangkuban Perahu",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Gunung_Tangkuban_Parahu.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Alamat :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Cikahuripan, Lembang, Kab Bandung Barat, Jawa Barat",
+            "flex": 5,
+            "wrap": true
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Jam Operasional :",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "07.00-17.00 WIB"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Kabar Terkini :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Dapat dilihat pada link dibawah",
+            "color": "#aaaaaa",
+            "wrap": true,
+            "flex": 3
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Gunung Tangkuban Perahu",
+          "uri": "https://travel.tribunnews.com/2020/06/16/gunung-tangkuban-parahu-dibuka-kembali-untuk-kunjungan-wisatawan"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Universitas Pendidikan Indonesia",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://harga.web.id/wp-content/uploads/gerbang-masuk-upi-bandung.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Alamat :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Jl. Peneropongan Bintang No.45, Lembang, Kab Bandung Barat",
+            "flex": 5,
+            "wrap": true
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Tahun Berdiri :",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "1954"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Universitas Pendidikan Indonesia (UPI) salah satu Perguruan Tinggi Negeri di Indonesia yang berdiri sejak tahun 1954. UPI berawal dari sebuah Perguruan Tinggi Pendidikan Guru yang telah mengalami metamorfosis hingga menjadi salah satu Perguruan Tinggi Negeri Berbadan Hukum di Indonesia.",
+        "wrap": true,
+        "margin": "xl"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Tentang UPI",
+          "uri": "https://www.upi.edu/"
+        },
+        "color": "#4fd2e3"
+      }
+    ]
+  }
+}

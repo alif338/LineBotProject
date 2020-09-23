@@ -1,0 +1,98 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Taman Balai Kota",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://storage.googleapis.com/allindonesiatoursim/2018/01/1262c4ee-taman-balai-kota.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Alamat :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Jl. Wastukencana No.2 Kota Bandung",
+            "flex": 5,
+            "wrap": true
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Jam Operasional :",
+            "wrap": true
+          },
+          {
+            "type": "text",
+            "text": "24 jam"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Kabar Terkini :",
+            "flex": 2
+          },
+          {
+            "type": "text",
+            "text": "Belum ada kabar penutupan saat PSBB mendatang",
+            "wrap": true,
+            "flex": 3
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Selengkapnya, silahkan klik link dibawah",
+        "color": "#666666",
+        "wrap": true
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Balkot Bandung",
+          "uri": "https://tempatwisatadibandung.info/balai-kota-bandung-ada-gembok-cinta-di-kota-bandung/"
+        }
+      }
+    ]
+  }
+}

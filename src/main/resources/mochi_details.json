@@ -1,0 +1,53 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Mochi Ice Cream",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://assets.kompasiana.com/items/album/2018/10/24/bubbies-mochi-icecream-750xx2400-1352-0-9-5bd021556ddcae6f36342262.jpg?t=o&v=740&x=416",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Awalnya, mochi terbuat dari adonan tepung beras yang berisi kacang merah dan ditaburi tepung jagung. Namun seiring berjalannya waktu, muncullah inovasi baru pada isian mochi, yakni dengan es krim. Alhasil, semakin banyak orang menyukai kue mochi. Rasanya kenyal, sedikit lengket, dan es krimnya akan melting ketika dikunyah. Satu aja mana cukup?.",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "Selengkapnya, klik tautan berikut",
+        "color": "#aaaaaa"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Mochi Ice Cream",
+          "uri": "https://www.kompasiana.com/adimas51802/5bcff2dc677ffb77c707d088/resep-dan-cara-membuat-mochi-ice-cream-es-krim-khas-jepang"
+        }
+      }
+    ]
+  }
+}

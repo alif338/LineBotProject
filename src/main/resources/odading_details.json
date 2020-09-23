@@ -1,0 +1,59 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Odading",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://asset.kompas.com/crops/AoBKmkpfpOBpO5orRY2uDT0NfJM=/0x0:845x563/750x500/data/photo/2020/09/16/5f617e30c4d9a.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Asal Usul Nama Odading",
+        "size": "lg",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "Odading sudah ada sejak masa kolonial Belanda. Hal ini tertera dalam buku \"9 dari 10 Kata Bahasa Indonesia adalah Asing\" (2003) karya Alif Danya Munsyi yang diterbitkan oleh Kepustakaan Populer Gramedia. Dahulu ada kue goreng tak bernama yang terbuat dari adonan terigu campur gula. Suatu ketika seorang anak kecil Belanda merengek kepada ibunya minta dibelikan kue tak bernama itu. Rengerkan sang anak membuat ibunya penasaran dengan bentuk kudapan itu. Kemudian ia panggil seorang ujang penjual kue. Orang Belanda itu menyuruh si penjual kue keliling untuk membuka daun pisang penutup kue di nyiru.  Artikel ini telah tayang di Kompas.com dengan judul \"Asal-usul Nama Odading, Berawal dari Celetukan Orang Belanda\"",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "Selengkapnya, klik tautan berikut",
+        "color": "#aaaaaa"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Asal-usul Nama Odading",
+          "uri": "https://www.kompas.com/food/read/2020/09/20/162635575/asal-usul-nama-odading-berawal-dari-celetukan-orang-belanda?page=all"
+        }
+      }
+    ]
+  }
+}
