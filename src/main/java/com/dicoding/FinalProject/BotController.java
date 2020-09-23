@@ -100,7 +100,8 @@ class Controller {
         MessageEvent messageEvent = event;
         TextMessageContent textMessageContent = (TextMessageContent) messageEvent.getMessage();
         // Conditional apakah event mendapatkan pesan "flex message" atau tidak
-        if (textMessageContent.getText().toLowerCase().contains("detail")) {
+        if (textMessageContent.getText().toLowerCase().contains("detail")||textMessageContent.getText().
+        toLowerCase().contains("summary")) {
             replyFlexMessage(event.getReplyToken(), textMessageContent.getText().toLowerCase());
         } else if (textMessageContent.getText().toLowerCase().contains("#init")) {
             TemplateMessage carouselEvent = replyCarouselMessage();
@@ -314,6 +315,8 @@ class Controller {
                 json = "unpas_details.json";
             } else if (getKey.contains("unisba_detail")) {
                 json = "unisba_detaails.json";
+            } else {
+                json = "unknown.json";
             }
             String flexTemplate = IOUtils.toString(classLoader.getResourceAsStream(json));
 
