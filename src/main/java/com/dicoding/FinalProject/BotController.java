@@ -208,7 +208,7 @@ class Controller {
             String json = "";
             if (getKey.contains("walkot_detail")) {
                 json = "walkot_detail.json";
-            } else if (getKey.contains("wawalkot_detail")) {
+            } else if (getKey.contains("wakwalkot_detail")) {
                 json = "wakil_walkot_detail.json";
             } else if (getKey.contains("odading_detail")){
                 json = "odading_details.json";
